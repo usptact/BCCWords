@@ -40,7 +40,7 @@ namespace BCCWordsRelease
         /// </summary>
         public static void Main()
         {
-            var data = Datum.LoadData(@"<your-data-file>");
+            var data = Datum.LoadData(@"sample_data.txt");
 
             // Run model and get results
             var VocabularyOnSubData = ResultsWords.BuildVocabularyOnSubdata((List<Datum>)data);
@@ -276,7 +276,7 @@ namespace BCCWordsRelease
             var subData = data.Where((k, i) => i < 20000).ToList();
             string[] corpus = subData.Select(d => d.BodyText).Distinct().ToArray();
             var vocabularyOnSubData = BuildVocabularyFromCorpus(corpus);
-            return vocabularyOnSubData.GetRange(0, 300);
+            return vocabularyOnSubData.GetRange(0, 6);                                  // changed from (0,300)
         }
     }
 
@@ -1887,7 +1887,7 @@ public BCCWordsPosteriors InferPosteriors(
             List<string> vocabulary = new List<string>();
             Dictionary<string, int> wordCountList = new Dictionary<string, int>();
             stemmedDocs = new List<List<string>>();
-            var stopWordsFile = File.ReadAllLines(@"<your-stop-words-file>");
+            var stopWordsFile = File.ReadAllLines(@"stopwords.txt");
             var stopWordsList = new List<string>(stopWordsFile).ToArray();
             int docIndex = 0;
             List<string> words = new List<string>();

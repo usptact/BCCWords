@@ -34,13 +34,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Infer.Compiler">
-      <HintPath>..\..\Infer.NET 2.6\Bin\Infer.Compiler.dll</HintPath>
+      <HintPath>..\Infer.NET 2.6\Bin\Infer.Compiler.dll</HintPath>
     </Reference>
     <Reference Include="Infer.Runtime">
-      <HintPath>..\..\Infer.NET 2.6\Bin\Infer.Runtime.dll</HintPath>
+      <HintPath>..\Infer.NET 2.6\Bin\Infer.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="StemmersNet">
-      <HintPath>..\..\..\..\..\Downloads\stemmersnet\StemmersNet\bin\Debug\StemmersNet.dll</HintPath>
+      <HintPath>..\stemmersnet\StemmersNet\bin\Debug\StemmersNet.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
