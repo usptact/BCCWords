@@ -1,0 +1,20 @@
+1	10	1	this if fine
+1	20	2	not fine
+1	30	1	this is good
+1	40	2	not good
+2	10	1	this is fine
+2	20	1	not fine
+2	30	1	this is good
+2	40	1	not good
+3	10	2	this is fine
+3	20	2	not fine
+3	30	2	this is good
+3	40	2	not good
+4	10	1	this is fine
+4	20	1	not fine
+4	30	1	this is good
+4	40	2	not good
+5	10	2	this is fine
+5	20	2	not fine
+5	30	1	this is good
+5	40	2	not good
